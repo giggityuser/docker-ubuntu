@@ -1,0 +1,15 @@
+sudo: true
+
+services:
+  - docker
+
+before_install:
+  - docker build -t petrepatrasc/docker-apache-mpm-event .
+
+script:
+  - docker run -d --name apache petrepatrasc/docker-apache-mpm-event
+
+after_script:
+  - sudo docker kill $(docker ps -q);
+  - sudo docker rm $(docker ps -aq);
+  - sudo docker rmi $(docker images -q);
