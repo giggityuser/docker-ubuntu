@@ -1,4 +1,4 @@
-FROM ubuntu:15.04
+FROM ubuntu:14.04
 MAINTAINER Petre Pătrașc <petre@dreamlabs.ro>
 ENV REFRESHED_AT 2015-10-17 00:07
 
