@@ -22,6 +22,9 @@ RUN apt-get update -y -qq &&  \
         supervisor \
         netcat
 
+# Add Supervisor configuration
+ADD supervisor /etc/supervisor/
+
 ADD commands /root/commands
 WORKDIR /root
 CMD ["/root/commands/init.sh"]
