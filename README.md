@@ -1,6 +1,6 @@
 # Docker Ubuntu
 
-[![Build Status](https://travis-ci.org/petrepatrasc/docker-ubuntu.svg?branch=master)](https://travis-ci.org/petrepatrasc/docker-ubuntu)
+[![Build Status](https://travis-ci.org/petrepatrasc/docker-ubuntu.svg?branch=15.04)](https://travis-ci.org/petrepatrasc/docker-ubuntu)
 
 This repository is a base image that installs some common software required for building some other containers. It essentially allows for the setup of a base Ubuntu image with some defaults that are pre-configured for debug, maintenance and process management.
 
